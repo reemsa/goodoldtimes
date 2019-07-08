@@ -1,0 +1,1 @@
+ sw.removeStopwords(fs.readFileSync(name, 'utf8').replace(/[^A-Za-z0-9]+/g,' ').toLowerCase().split(' ')) 
