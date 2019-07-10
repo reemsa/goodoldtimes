@@ -18,7 +18,7 @@ let extract_words = (path_to_file) => {
 }
 let remove_stop_words = (word_list) => {
     let stop_words
-    if (typeof (word_list) != typeof ([])) {
+    if (!Array.isArray(word_list)) {
         console.log("insid ")
         return {}
     }
@@ -43,7 +43,7 @@ let remove_stop_words = (word_list) => {
    
 }
 let frequencies = (word_list) => {
-    if (typeof (word_list) != typeof ([]) || word_list == []) {
+    if (!Array.isArray(word_list) || word_list.length==0) {
         return {} 
     }
     let word_freq= {}
@@ -62,7 +62,7 @@ let frequencies = (word_list) => {
     return word_freq
 }
 let sort = (word_freq) => {
-    if (typeof(word_freq) !=typeof({}) || word_freq == {}) {
+    if (typeof word_freq != 'object' ||Array.isArray(word_freq) ||_.isEmpty(word_freq)) {
       return []  
     }
     let array:any=[]

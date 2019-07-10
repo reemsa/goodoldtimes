@@ -25,7 +25,7 @@ let extract_words = (path_to_file) => {
 }
 let remove_stop_words = (word_list) => {
     let stop_words
-    if (typeof (word_list) != typeof ([])) {
+    if (!Array.isArray(word_list)) {
         console.log("I need a list!")
         throw new AssertionError()
     }
