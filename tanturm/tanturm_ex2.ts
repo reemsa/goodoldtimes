@@ -9,6 +9,7 @@ let extract_words = (path_to_file) => {
     }
     try {
          data=fs.readFileSync(path_to_file, 'utf8')
+		 
     }
     catch(error) {
         throw error

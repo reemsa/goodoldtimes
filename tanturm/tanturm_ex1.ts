@@ -82,6 +82,7 @@ try {
     let file_name = "inputFile.txt"
     if (typeof (file_name) != typeof ("") || file_name == undefined) {
         console.log("You idiot! I need an input file!")
+		
         throw new AssertionError()
     }
     let word_freqs = sort(frequencies(remove_stop_words(extract_words(file_name))))
