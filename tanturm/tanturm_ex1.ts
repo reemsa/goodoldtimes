@@ -47,7 +47,7 @@ let remove_stop_words = (word_list) => {
    
 }
 let frequencies = (word_list) => {
-    if (typeof (word_list) != typeof ([]) || word_list == []) {
+    if (!Array.isArray(word_list) || word_list.length==0) {
         console.log("I need a list and non-empty list!")
         throw new AssertionError()
     }
@@ -63,7 +63,7 @@ let frequencies = (word_list) => {
     return word_freqs
 }
 let sort = (word_freq) => {
-    if (typeof(word_freq) !=typeof({}) || word_freq == {}) {
+    if (typeof word_freq != 'object' ||Array.isArray(word_freq) ||_.isEmpty(word_freq)) {
         console.log("I need a non-empty dictionary!")
         throw new AssertionError()
     }
