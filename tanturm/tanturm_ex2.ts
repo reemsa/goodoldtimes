@@ -18,6 +18,7 @@ let extract_words = (path_to_file) => {
     
 }
 let remove_stop_words = (word_list) => {
+	
     let stop_words
     if (!Array.isArray(word_list)) {
         throw new AssertionError();

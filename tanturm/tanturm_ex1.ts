@@ -96,6 +96,7 @@ try {
     }
     for (let i = 0; i < 25; i++) {
         console.log("top25 = " + word_freqs[i])
+		
     }
 }
 catch (error) {
