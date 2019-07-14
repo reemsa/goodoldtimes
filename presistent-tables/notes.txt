@@ -1,0 +1,2 @@
+we will go back to this chapter later on 
+we facing a problem with task 2 which ask us to Separate reading database  from writing to it  because we need first to read doc_id from documents table to insert word into words table
